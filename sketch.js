@@ -47,7 +47,7 @@ function draw(){
 }
 
 async function gettime(){
-    response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     j = await response.json();
     daytime = j.datetime;
     hour =  daytime.slice(11,13);
