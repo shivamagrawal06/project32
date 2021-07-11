@@ -47,9 +47,9 @@ function draw(){
 }
 
 async function gettime(){
-    response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    response = await fetch("https://worldclockapi.com/api/json/est/now");
     j = await response.json();
-    daytime = j.datetime;
+    daytime = j.currentDateTime;
     hour =  daytime.slice(11,13);
    if(hour <= 8 && hour >= 6){
        var bg = "sunrise1.png";
