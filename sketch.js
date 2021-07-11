@@ -47,7 +47,7 @@ function draw(){
 }
 
 async function gettime(){
-    response = await fetch("http://worldclockapi.com/api/json/est/now");
+    response = await fetch("https://worldclockapi.com/api/json/est/now");
     j = await response.json();
     daytime = j.currentDateTime;
     console.log(daytime);
